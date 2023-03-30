@@ -1,0 +1,10 @@
+.principal__ver{
+  color:blue;
+  text-decoration: none;
+}
+
+.principal__ver::after{
+  content: "->";
+   color: blue;
+  
+}

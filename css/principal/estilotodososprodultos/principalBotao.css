@@ -1,0 +1,14 @@
+
+.principal__botão{
+   height:2rem;
+   width:30rem;  
+   margin: 1rem;
+  background:blue;
+  color:white;
+  border:1px solid blue;
+}
+
+.principal__botão:hover{
+  color:whitesmoke;
+}
+

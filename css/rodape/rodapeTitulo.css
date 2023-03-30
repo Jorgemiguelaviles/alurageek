@@ -1,0 +1,11 @@
+
+.rodape__titulo{
+  font-size:2rem ;
+  padding-left:30px;
+  
+  }
+
+.rodape__titulo::before {
+   content: "alura";
+   color: blue;
+}

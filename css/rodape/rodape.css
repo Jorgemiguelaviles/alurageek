@@ -1,0 +1,8 @@
+.rodape{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background:lightblue ;
+  align-items: center;
+}

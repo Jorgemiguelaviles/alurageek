@@ -1,0 +1,26 @@
+completos
+- Middle end
+- Criar os geradores de section da pagina principal ver o arquivo template/section.html
+
+- estilos
+- criar Banner
+- Importar fonte
+- estilos footer
+- dinamizar o margin da div de produtos de uma forma responsiva(variavel)
+
+- estilos
+- criar Banner
+- Importar fonte
+- estilos footer
+- Criar css do botao
+
+- Pagina de cadastro e login um campo por linha 
+- adequar os espacamentos entre os produtos(absoluta)
+- dinamizar o margin da div de produtos de uma forma responsiva(variavel)
+
+
+
+
+
+- Middle end
+- Criar os geradores de section da pagina principal ver o arquivo template/section.html

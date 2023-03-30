@@ -1,0 +1,10 @@
+.cabecalho__titulo{
+  font-size:2rem ;
+  padding-left:30px;
+  
+  }
+
+.cabecalho__titulo::before {
+   content: "alura";
+   color: blue;
+}

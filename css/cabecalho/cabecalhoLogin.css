@@ -1,0 +1,22 @@
+.cabecalho__login{
+  color: #2A7AE4;
+  transition: 0.2s;;
+  border:1px solid #2A7AE4;
+  text-decoration: none;  
+  font-size:1.4rem;
+}
+
+.cabecalho__login:link{
+  color: #2A7AE4;
+ 
+  }
+.cabecalho__login:visited{
+  color: #2A7AE4;
+ 
+  }
+.cabecalho__login:hover{
+  color: #2A7AE4;
+  }
+.cabecalho__login:hover{
+  color: #2A7AE4;
+  }
