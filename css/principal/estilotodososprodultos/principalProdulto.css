@@ -1,1 +1,20 @@
-.principal__produltos{padding: 10px;}
+.principal__produltos{
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+
+ 
+}
+
+@media (max-width: 480px) and (min-width: 320px)
+{
+  .principal__produltos{
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+
+ 
+}
+}

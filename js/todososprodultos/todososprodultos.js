@@ -5,7 +5,7 @@ divCabecalho1.classList.add("cabecalho__principal")
 const divCabecalho2=document.createElement("div")
 
 const section=document.createElement("section")
-section.classList.add("cabecalho__principal")
+section.classList.add("principal__produltos")
 
 
 const divRodape1=document.createElement("div")
@@ -88,12 +88,12 @@ const tituloRodape=(divRodape1)=>{
 const infoRodape=(divRodape2)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`       
-  <a href="#"><p>Quem somos nós</p></a>
-  <a href="#"><p>Politica de privacidade</p></a>
-  <a href="#"><p>Programa fidelidade</p></a>
-  <a href="#"><p>Nossas lojas</p></a>
-  <a href="#"><p>Quero ser franquiado</p></a>
-  <a href="#"><p>Anuncie aqui</p></a>`
+  <a href="#" class=rodape__info><p>Quem somos nós</p></a>
+  <a href="#" class=rodape__info><p>Politica de privacidade</p></a>
+  <a href="#" class=rodape__info><p>Programa fidelidade</p></a>
+  <a href="#" class=rodape__info><p>Nossas lojas</p></a>
+  <a href="#" class=rodape__info><p>Quero ser franquiado</p></a>
+  <a href="#" class=rodape__info><p>Anuncie aqui</p></a>`
   divRodape2.innerHTML=conteudo
   rodape.appendChild(divRodape2)
 }

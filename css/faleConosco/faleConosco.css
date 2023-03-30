@@ -5,7 +5,24 @@
   height:auto;
   width:35rem;
   flex-direction: column;
+  align-items: left ;
+  padding-bottom: 1rem;
+  
+}
+
+@media (max-width: 480px) and (min-width: 320px)
+{.faleConosco{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  height:auto;
+  width:35rem;
+  flex-direction: column;
   align-items: center ;
   padding-bottom: 1rem;
+ 
+  
+}
+
   
 }

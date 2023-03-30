@@ -12,8 +12,8 @@ const divRodape2=document.createElement("div")
 const divRodape3=document.createElement("div")
 divRodape3.classList.add("faleConosco")
 
-const formulario=document.createElement("principal__form")
-formulario.classList.add("form")
+const formulario=document.createElement("form")
+formulario.classList.add("principal__form")
 
 
 
