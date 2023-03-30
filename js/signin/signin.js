@@ -47,7 +47,7 @@ const form=(formulario)=>{
   let corpo=document.querySelector("#principal")
   let conteudo=`
   <p class=principal__texto>cadastre-se</p>
-       <input id="email_form_signin" type="email" placeholder="escreva seu email" class=principal__cadastro data-email required maxlength="30" minlength="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+       <input type="email" placeholder="escreva seu email" class=principal__cadastro data-cadastro name=email__cadastro required maxlength="30" minlength="15" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
        <ol>email deve conter 
          <li class=principal__txt>Deve começar com um ou mais caracteres alfabéticos em minúsculas, números, ponto, underscore, percent ou sinal de mais (+), seguido de uma arroba (@).</li>
          <li class=principal__txt>Deve ter um ou mais caracteres alfabéticos em minúsculas, números, ponto ou hífen, seguido de um ponto (.) e dois ou mais caracteres alfabéticos em minúsculas.</li>
@@ -60,7 +60,7 @@ const form=(formulario)=>{
 
       
       
-       <input id="senha_form_signin" type="password" placeholder="escreva sua senha" class=principal__cadastro data-senha required maxlength="50" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$"
+       <input type="password" placeholder="escreva sua senha" class=principal__cadastro data-cadastro name=senha__cadastro required maxlength="50" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$"
  >
         <ol>senha deve conter
          <li class=principal__txt>um digito especial</li>
@@ -70,21 +70,21 @@ const form=(formulario)=>{
          <li class=principal__txt>não pode estar em branco</li>
        </ol>
             
-       <input type="text" name=nome placeholder="Digite seu nome" class=principal__cadastro required maxlength="50" minlength="8" pattern=/^[a-zA-ZÀ-ÖØ-öø-ÿ]+(?:-[a-zA-ZÀ-ÖØ-öø-ÿ]+)*(?:\s+[a-zA-ZÀ-ÖØ-öø-ÿ]+(?:-[a-zA-ZÀ-ÖØ-öø-ÿ]+)*)*$/
+       <input type="text" placeholder="Digite seu nome" class=principal__cadastro data-cadastro name=nome__cadastro required maxlength="50" minlength="8" pattern=/^[a-zA-ZÀ-ÖØ-öø-ÿ]+(?:-[a-zA-ZÀ-ÖØ-öø-ÿ]+)*(?:\s+[a-zA-ZÀ-ÖØ-öø-ÿ]+(?:-[a-zA-ZÀ-ÖØ-öø-ÿ]+)*)*$/
        >
        <ol>
        <li class=principal__txt>permite apenas letras, espaço e hífen</li>
        <li class=principal__txt>não pode estar em branco</li>
         </ol>
        
-       <input type="text" name=usuario placeholder="Digite seu usuario" class=principal__cadastro maxlength="50" minlength="8" pattern=/^[a-z0-9._-]+$/> 
+       <input type="text" placeholder="Digite seu usuario" class=principal__cadastro data-cadastro name=usuario__cadastro required maxlength="50" minlength="8" pattern=/^[a-z0-9._-]+$/> 
 
        <ol>
        <li class=principal__txt>permite letras minúsculas, números, ponto, underscore e hífen</li>
          <li class=principal__txt>não pode estar em branco</li>
       </ol>
        
-       <input type="date" name=dataDeNascimento placeholder="digite sua data de nascimento" class=principal__cadastro required >
+       <input type="date" placeholder="digite sua data de nascimento" class=principal__cadastro required data-cadastro name=nascimento__cadastro >
       
        <input id="form_btn" type="button" value=entrar class=principal__botão onclick="get_for_data()">`
 
