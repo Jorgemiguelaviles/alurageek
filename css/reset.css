@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@100&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -16,8 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  font-family: 'Itim', cursive;
-font-family: 'Share Tech', sans-serif;
+  
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -29,8 +29,9 @@ font-family: 'Share Tech', sans-serif;
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+}share techshare tech
 body {
+  font-family: 'Alkatra', sans-serif;
 	line-height: 1;
 }
 ol, ul {

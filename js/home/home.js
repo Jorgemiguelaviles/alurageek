@@ -2,7 +2,6 @@ tela=()=>{
 const section=document.createElement("section")
 section.classList.add("principal__corpo")
 const divBanner=document.createElement("div")
-
 const divCabecalho1=document.createElement("div")
 divCabecalho1.classList.add("cabecalho__principal")
 const divCabecalho2=document.createElement("div")
@@ -139,9 +138,3 @@ infoRodape(divRodape2)
 faleConoscoRodape(divRodape3)}
 
 tela()
-
-
-
-
-
-

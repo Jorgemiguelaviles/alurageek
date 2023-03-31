@@ -6,7 +6,7 @@
 
 const cadastro = document.querySelectorAll("[data-cadastro]")
 
-const respostas = {
+const respostasSiginin = {
   email: {
     valueMissing: "Desculpe, nenhum caracter foi declarado.",
     patternMismatch: "Caracteres inválidos.",
@@ -39,23 +39,91 @@ const respostas = {
     tooLong: "Número de caracteres inválidos.",
     tooShort: "Número de caracteres inválidos.",}}
 
+validarEmailSignin = (email)=>{
 
-const validar = (elemento)=>{
+  if(email.validity.valueMissing){
+    
+  }
+  else if(email.validity.patternMismatch){
+    
+  }
+  else if(email.validity.tooLong){
+    
+  }
+  else if(email.validity.tooShort){
+    
+  }
+  
+  }
+
+validarSenhaSignin = (senha)=>{
+  
+  if(senha.validity.valueMissing){
+    
+  }
+  else if(senha.validity.patternMismatch){
+    
+  }
+  else if(senha.validity.tooLong){
+    
+  }
+  else if(senha.validity.tooShort){
+    
+  }
+}
+validarNomeSignin = (nome)=>{
+  if(nome.validity.valueMissing){
+    
+  }
+  else if(nome.validity.patternMismatch){
+    
+  }
+  else if(nome.validity.tooLong){
+    
+  }
+  else if(nome.validity.tooShort){
+    
+  }
+}
+validarUsuarioSignin = (usuario)=>{
+  if(usuario.validity.valueMissing){
+    
+  }
+  else if(usuario.validity.patternMismatch){
+    
+  }
+  else if(usuario.validity.tooLong){
+    
+  }
+  else if(usuario.validity.tooShort){
+    
+  }
+}
+validarNascimentoSignin = (nascimento)=>{
+  
+}
+
+const validarSignin = (elemento)=>{
   if (elemento.name=="email__cadastro")
-  {console.log("ok1")}
+  { validarEmailSignin(elemento) 
+    }
   if (elemento.name=="senha__cadastro")
-  {console.log("ok2")}
+  { validarSenhaSignin(elemento) 
+    }
   if (elemento.name=="nome__cadastro")
-  {console.log("ok3")}
+  { validarNomeSignin(elemento) 
+    }
   if (elemento.name=="usuario__cadastro")
-  {console.log("ok4")}
+  { validarUsuarioSignin(elemento) 
+    }
   if (elemento.name=="nascimento__cadastro")
-  {console.log("ok5")}
+  { validarNascimentoSignin(elemento) 
+    }
   
   
   
 }
 
-const validando=dados.forEach((dados)=>{
-  dados.addEventListener("blur",()=>validar(dados))
+const validandoSignin=cadastro.forEach((cadastro)=>{
+  cadastro.addEventListener("blur",()=>validarSignin(cadastro))
 })

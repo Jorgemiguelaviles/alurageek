@@ -5,5 +5,103 @@
    width: 100%;
   padding-bottom:1rem;
   align-items: center;
-  align-items: center;
+}
+
+.cabecalho__login{
+  color: #2A7AE4;
+  transition: 0.2s;;
+  border:1px solid #2A7AE4;
+  text-decoration: none;  
+  font-size:1.4rem;
+}
+
+.cabecalho__login:link{
+  color: #2A7AE4;
+ 
+  }
+.cabecalho__login:visited{
+  color: #2A7AE4;
+ 
+  }
+.cabecalho__login:hover{
+  color: #2A7AE4;share tech
+  }
+.cabecalho__login:hover{
+  color: #2A7AE4;
+  }
+
+
+
+
+.cabecalho__signin{
+  text-decoration: none;
+  color: #2A7AE4;
+  border:1px solid #2A7AE4;
+  transition: 0.2s;
+  font-size:1.4rem;
+  
+  }
+.cabecalho__signin:link{
+  color: #2A7AE4;
+ 
+  
+}
+.cabecalho__signin:visited{
+  color: #2A7AE4;
+  
+}
+.cabecalho__signin:hover{
+  color: #2A7AE4;
+  
+}
+
+.cabecalho__pesquisa{
+  background:#F5F5F5;
+  background-image:url(../../img/lupa.svg);  
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 1px black solid;
+  border-radius: 15px;
+  width: 30em;
+  height: 2rem;
+  
+  
+}
+
+@media (max-width: 480px) and (min-width: 320px)
+{.cabecalho__pesquisa{
+  background:#F5F5F5;
+  border: 1px black solid;
+  border-radius: 15px;
+  width: 90%;
+  height: 2rem;
+  
+}}
+
+
+.cabecalho__principal{
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+
+ 
+}
+
+
+
+
+
+
+
+
+.cabecalho__titulo{
+  font-size:2rem ;
+  padding-left:30px;
+  
+  }
+
+.cabecalho__titulo::before {
+   content: "alura";
+   color: blue;
 }

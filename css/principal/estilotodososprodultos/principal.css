@@ -11,6 +11,101 @@
 }
 
 
+.principal__botão{
+   height:2rem;
+   width:30rem;  
+   margin: 1rem;
+  background:blue;
+  color:white;
+  border:1px solid blue;
+}
+
+.principal__botão:hover{
+  color:whitesmoke;
+}
+
+.principal__corpo{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around
+}
+
+
+.principal__descricao{
+  height:2rem;
+  width:30rem;
+  margin:1rem;
+}
+
+.principal__nomeDoProdulto{
+  height:2rem;
+  width:30rem;
+  margin:1rem;
+}
+
+.principal__produltos{
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+
+ 
+}
+
+@media (max-width: 480px) and (min-width: 320px)
+{
+  .principal__produltos{
+   display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+
+ 
+}
+}
+
+.principal__subcabecalho{
+  width: 90vw;
+  font-size: 2rem;
+  margin: 1.2rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.principal__tipos{
+  height:2rem;
+  width:30rem;
+  margin:1rem;
+}
+
+.principal__titulo{
+  font-size: 2rem;
+  margin: 1.2rem;
+  display:inline
+}
+
+
+.principal__url{
+  height:2rem;
+  width:30rem;
+  margin:1rem;
+}
+
+.principal__valor{
+  height:2rem;
+  width:30rem;
+  margin:1rem;
+}
+
+.principal__ver{
+  border:1px solid blue;
+  background:blue;
+  color:white;
+  text-decoration: none;
+  
+}
+
 
 
 
