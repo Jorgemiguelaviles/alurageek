@@ -5,8 +5,9 @@ const divBanner=document.createElement("div")
 const divCabecalho1=document.createElement("div")
 divCabecalho1.classList.add("cabecalho__principal")
 const divCabecalho2=document.createElement("div")
+
 const divRodape1=document.createElement("div")
-divRodape1.classList.add("cabecalho__principal")
+divRodape1.classList.add("rodape__principal")
 const divRodape2=document.createElement("div")
 const divRodape3=document.createElement("div")
 divRodape3.classList.add("faleConosco")
@@ -16,8 +17,11 @@ divRodape3.classList.add("faleConosco")
 const titulo=(divCabecalho1)=>{
   const cabecalho=document.querySelector("#header")
 const conteudo=`
-  <img src="img/controle.svg" alt="logo">
-  <p class="cabecalho__titulo"> geek</p>
+<div>
+   <img src="../../assets/img/controle.svg" alt="logo">
+   <p class="cabecalho__titulo"> geek</p>
+</div>
+<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
     `
   divCabecalho1.innerHTML=conteudo
   cabecalho.appendChild(divCabecalho1)
@@ -26,9 +30,9 @@ const conteudo=`
 const procura=(divCabecalho2)=>{
   const cabecalho=document.querySelector("#header")
 const conteudo=` 
-<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
-<a href="html/signin.html" class=cabecalho__login>sign in</a> 
-<a href="html/login.html" class=cabecalho__signin>login</a>`
+
+<a href="../../telas/signin.html" class=cabecalho__login>sign in</a> 
+<a href="../../telas/login.html" class=cabecalho__signin>login</a>`
 divCabecalho2.innerHTML=conteudo
 cabecalho.appendChild(divCabecalho2)
   
@@ -39,7 +43,11 @@ cabecalho.appendChild(divCabecalho2)
 const banner=(divBanner)=>{
 const principal= document.querySelector("#principal")
 const conteudo=` 
-<a href=# ><img src=img/Hero.svg class=principal__banner></img></a>
+<img src=../../assets/img/banner.jpg class=principal__banner></img>
+<h3 class=principal__titulo__banner>Dezembro promocional</h3>
+<p class=principal__descricao__banner>Produltos selecionados com 33% de desconto</p>
+<input type=button value="Ver Consoles" class=principal__button
+>
 `
 divBanner.innerHTML=conteudo
 principal.appendChild(divBanner)
@@ -54,7 +62,10 @@ let divTipo=document.createElement("div")
 let conteudo=`
 <div class=principal__subcabecalho>
   <h3 class=principal__titulo>Star Wars</h3>
-  <a href="html/todososprodultos.html" class=principal__ver>ver tudo</a>
+  <div class=principal__icon>
+  <a href="telas/todososprodultos.html" class=principal__ver>ver tudo</a>
+  <img src="../../assets/img/seta.svg">
+  </div>
 </div>` 
 divTipo.innerHTML=conteudo
 section.appendChild(divTipo)
@@ -68,7 +79,7 @@ const Produlto=(section)=>{
   let divProdulto=document.createElement("div")
   let conteudo=`
     <div class=principal__produlto>
-      <img src="img/produltos/starwars/starwars1.svg" alt="starwars1">
+      <img src="../../assets/img/produltos/starwars/starwars1.svg" alt="starwars1">
       <p>Nome vindo de dado externo</p>
       <p>Valor vindo de dado externo</p>
       <a href="#" class=principal__verProdulto>Ver produlto</a>
@@ -83,8 +94,8 @@ divProdulto.innerHTML=conteudo
 const tituloRodape=(divRodape1)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`
-  <img src="../img/controle.svg" alt="logo">
-       <p class="cabecalho__titulo"> geek</p>`
+  <img src="../../assets/img/controle.svg" alt="logo">
+       <p class="rodape__titulo"> geek</p>`
   divRodape1.innerHTML=conteudo
   rodape.appendChild(divRodape1)
 }
@@ -105,13 +116,16 @@ const infoRodape=(divRodape2)=>{
 const faleConoscoRodape=(divRodape3)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`    <p class=faleConosco__texto>fale conosco</p>
-       <input type="text" placeholder="digite seu nome completo" class=faleConosco__nome data-dados name="nome" id="nome"
-         maxlength=40 minlength=10 required>
-       <input type="text" placeholder="escreva a mensagem a ser enviada" class=faleConosco__email data-dados name="email"
-         maxlength=100 minlength=15 required>
-       <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao>
+  <div class=faleConosco__entreEmContato>
+       <input type="text" class=faleConosco__nome data-dados placeholder="digite seu nome completo" name="nome" id="nome" maxlength=40 minlength=10 required>
+       
+       
+       <input type="text" class=faleConosco__email placeholder="escreva a mensagem a ser enviada" data-dados name="email" id="email" maxlength=100 minlength=15 required>
+        
+         
+       <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao id=buttonSend>
        <ul class=valor>
-
+  </div>
        </ul>`
   
   divRodape3.innerHTML=conteudo

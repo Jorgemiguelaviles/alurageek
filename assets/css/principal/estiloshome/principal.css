@@ -1,0 +1,202 @@
+.principal{background: #E5E5E5;
+           width: 100%;
+           height:auto;
+           display:flex;
+           flex-wrap: wrap;}
+
+
+.principal__banner{
+  width: 100%;
+
+}
+
+.principal__titulo__banner{
+  font-size: 3rem;
+position: absolute;
+top: 50%;
+left: 30%;
+color: black;
+}
+
+.principal__descricao__banner{
+  font-size: 1.5rem;
+position: absolute;
+top: 75%;
+left: 30%;
+color: black;
+}
+
+.principal__button {
+  height: 62px;
+  width: 423px;
+  background: blue;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+}
+/* 
+@media (min-width: 320px) and (max-width: 480px) 
+{.principal__titulo__banner{
+  font-size: 1.5rem;
+  left: 29%;
+}
+
+.principal__descricao__banner{
+font-size: 70%;
+top: 68%;
+left: 5%;
+
+}
+
+.principal__button {
+  height: 39.2px;
+  width: 200px;
+  font-size: 1rem;
+  top: 76%;
+  left: 18%;
+}
+  
+}
+
+@media (min-width: 481px) and (max-width: 768px) 
+{.principal__titulo__banner{
+  font-size: 1.5rem;
+  left: 29%;
+}
+
+.principal__descricao__banner{
+font-size: 1rem;
+top: 68%;
+left: 5%;
+
+}
+
+.principal__button {
+  height: 39.2px;
+  width: 200px;
+  font-size: 1rem;
+  top: 76%;
+  left: 18%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) 
+{.principal__titulo__banner{
+  font-size: 1.5rem;
+  left: 29%;
+}
+
+.principal__descricao__banner{
+font-size: 1rem;
+top: 68%;
+left: 5%;
+
+}
+
+.principal__button {
+  height: 39.2px;
+  width: 200px;
+  font-size: 1rem;
+  top: 76%;
+  left: 18%;
+}
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) 
+{.principal__titulo__banner{
+  font-size: 1.5rem;
+  left: 29%;
+}
+
+.principal__descricao__banner{
+font-size: 1rem;
+top: 68%;
+left: 5%;
+
+}
+
+.principal__button {
+  height: 39.2px;
+  width: 200px;
+  font-size: 1rem;
+  top: 76%;
+  left: 18%;
+}
+}
+
+@media (min-width: 1201px)  
+{.principal__titulo__banner{
+  font-size: 1.5rem;
+  left: 29%;
+}
+
+.principal__descricao__banner{
+font-size: 1rem;
+top: 68%;
+left: 5%;
+
+}
+
+.principal__button {
+  height: 39.2px;
+  width: 200px;
+  font-size: 1rem;
+  top: 76%;
+  left: 18%;
+}
+  
+} */
+
+
+.principal__corpo{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.principal__produlto{
+  text-align: left;
+  
+}
+
+.principal__subcabecalho{
+  width: 90vw;
+  font-size: 2rem;
+  margin: 1.2rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.principal__titulo{
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  display:inline;
+  padding-left: 1.2rem;
+  font-weight:700;
+ 
+}
+
+.principal__ver{
+  color:blue;
+  text-decoration: none;
+}
+
+.principal__icon{
+  padding-right: 3.2rem;
+}
+
+
+.principal__verProdulto{color:#2A7AE4;
+            text-decoration:none;}
+.principal__verProdulto:link{color:#2A7AE4;
+                 text-decoration:none;}
+.principal__verProdulto:visited{color:#2A7AE4;
+                    text-decoration:none;}
+.principal__verProdulto:hover{color:#2A7AE4;
+                  text-decoration:none;}

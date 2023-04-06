@@ -1,18 +1,19 @@
-const dados = document.querySelectorAll("[data-dados]");
+//id = buttonSend
+const button= document.querySelector("#buttonSend")
 
 const respostas = {
   nome: {
-    valueMissing: "Desculpe, nenhum caracter foi declarado.",
-    patternMismatch: "Caracteres inválidos.",
-    tooLong: "Número de caracteres inválidos.",
-    tooShort: "Número de caracteres inválidos.",
+    valueMissing: "Desculpe, nenhum caracter foi declarado no campo nome.",
+    patternMismatch: "Caracteres inválidos dentro do campo nome.",
+    tooLong: "Número de caracteres inválidos no campo nome.",
+    tooShort: "Número de caracteres inválidos no campo nome.",
     
   },
   email: {
-    valueMissing: "Desculpe, nenhum caracter foi declarado.",
-    patternMismatch: "Caracteres inválidos.",
-    tooLong: "Número de caracteres inválidos.",
-    tooShort: "Número de caracteres inválidos.",
+    valueMissing: "Desculpe, nenhum caracter foi declarado no campo email.",
+    patternMismatch: "Caracteres inválidos dentro do campo email.",
+    tooLong: "Número de caracteres inválidos no campo email.",
+    tooShort: "Número de caracteres inválidos no campo email.",
   },
 };
 
@@ -41,10 +42,9 @@ const validarNome = (nome) => {
     nome.parentNode.replaceChild(resultado, nome.parentNode.lastChild);
   } 
   else {
-    const conteudo=`<p>${respostas.nome.ok}</p>`
-    resultado.innerHTML=conteudo
-    nome.parentNode.replaceChild(resultado, nome.parentNode.lastChild);
-    return true;
+    
+    estado=true
+    return estado;
   }
 };
 
@@ -76,25 +76,61 @@ const validarEmail = (email) => {
   else {
     const conteudo=`<p>${respostas.email.ok}</p>`
     resultado.innerHTML=conteudo
-    email.parentNode.replaceChild(resultado, email.parentNode.lastChild);
+    email.parentNode.replaceChild(resultado, email.parentNode.lastChild)
+      estado=true;
+    return estado
   }
 };
 
-const validar = (elemento) => {
+
+function validar() {
+  let nomeValido = false;
+  let emailValido = false;
+  const dados = document.querySelectorAll("[data-dados]");
   
-  
-  if (elemento.name == "nome") {
-    nomeValido = validarNome(elemento);
-  } else if (elemento.name == "email") {
-    emailValido = validarEmail(elemento);    
+  dados.forEach((dados) => {
+    if (dados.name == "nome") {
+      nomeValido = validarNome(dados);
+    } else if (dados.name == "email") {
+      emailValido = validarEmail(dados);
+    }
+  });
+  if (nomeValido && emailValido) {
+    estado=true;
+    return estado
+  } else {
+    estado=false
+    return estado;
   }
-  
-
-};
+}
 
 
-const validando=dados.forEach((dados) => {
-  dados.addEventListener("blur", () => validar(dados));
+function situacao(validacao) {
+ console.log(validacao)
+}
+
+button.addEventListener("click", function() {
+  const validacao = validar();
+  situacao(validacao);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

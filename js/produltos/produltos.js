@@ -1,9 +1,3 @@
-
-    
-
-
-        
-
 const divCabecalho1=document.createElement("div")
 divCabecalho1.classList.add("cabecalho__principal")
 
@@ -11,7 +5,7 @@ const divCabecalho2=document.createElement("div")
 
 
 const divRodape1=document.createElement("div")
-divRodape1.classList.add("cabecalho__principal")
+divRodape1.classList.add("rodape__principal")
 
 const divRodape2=document.createElement("div")
 
@@ -25,8 +19,13 @@ formulario.classList.add("principal__form")
 
 const titulo=(divCabecalho1)=>{
   const cabecalho=document.querySelector("#header")
-const conteudo=`<img src="../img/controle.svg" alt="logo">
-      <p class="cabecalho__titulo"> geek</p>`
+const conteudo=`
+<div>
+  <img src="../../assets/img/controle.svg" alt="logo">
+   <p class="cabecalho__titulo"> geek</p>
+</div>
+<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
+    `
   divCabecalho1.innerHTML=conteudo
   cabecalho.appendChild(divCabecalho1)
 }
@@ -34,9 +33,9 @@ const conteudo=`<img src="../img/controle.svg" alt="logo">
 const procura=(divCabecalho2)=>{
   const cabecalho=document.querySelector("#header")
 const conteudo=` 
-<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
-<a href="signin.html" class=cabecalho__login>sign in</a> 
-<a href="login.html" class=cabecalho__signin>login</a>`
+
+<a href="/telas/signin.html" class=cabecalho__login>sign in</a> 
+<a href="/telas/login.html" class=cabecalho__signin>login</a>`
 divCabecalho2.innerHTML=conteudo
 cabecalho.appendChild(divCabecalho2)
   
@@ -45,16 +44,26 @@ cabecalho.appendChild(divCabecalho2)
 const form=(formulario)=>{
   let corpo=document.querySelector("#principal")
   let conteudo=`<p class=principal__texto>adicionar novo produlto</p>
-       <input type="url" placeholder="url da imagem" class=principal__url data-info required id="url" pattern="/^https?:\/\/[^\s/$.?#].[^\s]*$/">
+       <input name="url" type="url" placeholder="url da imagem" class=principal__url id="principal__url" data-info required id="url" pattern="/^https?:\/\/[^\s/$.?#].[^\s]*$/">
+       
+       
        <select name="categorias" class=principal__tipos id=categorias data-info required>
          <option value="fisrt">games</option>
          <option value="second">star wars</option>
          <option value="third">diversos</option>
        </select>
-       <input type="text" placeholder="nome do produlto"id=nome class=principal__nomeDoProdulto pattern="^[a-zA-Z0-9À-ú\s\-'()&+,.:;?!]+$" data-info required>
-       <input type="number" value="preço do produlto" min=0 max=10000 placeholder="preço do produlto" id=preco class=principal__valor pattern="^\d+(\.\d{1,2})?$" data-info required>
-       <input type="text" placeholder="descrição do produlto" id=descricao class=principal__descricao data-info required>
-       <input type="submit" value=entrar id=button class=principal__botão >
+       
+       <input name=nomeDoProduto type="text" id=nomeDoProdulto placeholder="Nome do produto "class=principal__nomeDoProdulto pattern="^[a-zA-Z0-9À-ú\s\-'()&+,.:;?!]+$" data-info required>
+       
+       
+       <input name=preco type="number" min=0 max=10000 placeholder="preço do produlto" id=preco class=principal__valor pattern="^\d+(\.\d{1,2})?$" data-info required>
+      
+       
+       <input name=descricao type="text" id=descricao placeholder="Descrição do produlto" class=principal__descricao data-info required>
+       
+       
+       <input type="button" value=entrar id=buttonProdultos class=principal__botão >
+      
   `
 formulario.innerHTML=conteudo
   corpo.appendChild(formulario)
@@ -72,8 +81,8 @@ formulario.innerHTML=conteudo
 const tituloRodape=(divRodape1)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`
-  <img src="../img/controle.svg" alt="logo">
-       <p class="cabecalho__titulo"> geek</p>`
+  <img src="../../assets/img/controle.svg" alt="logo">
+       <p class="rodape__titulo"> geek</p>`
   divRodape1.innerHTML=conteudo
   rodape.appendChild(divRodape1)
 }
@@ -94,18 +103,22 @@ const infoRodape=(divRodape2)=>{
 const faleConoscoRodape=(divRodape3)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`    <p class=faleConosco__texto>fale conosco</p>
-       <input type="text" placeholder="digite seu nome completo" class=faleConosco__nome data-dados name="nome" id="nome"
-         maxlength=40 minlength=10 required>
-       <input type="text" placeholder="escreva a mensagem a ser enviada" class=faleConosco__email data-dados name="email"
-         maxlength=100 minlength=15 required>
-       <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao>
+  <div class=faleConosco__entreEmContato>
+       <input type="text" class=faleConosco__nome data-dados placeholder="digite seu nome completo" name="nome" id="nome" maxlength=40 minlength=10 required>
+       
+       
+       <input type="text" class=faleConosco__email placeholder="escreva a mensagem a ser enviada" data-dados name="email" id="email" maxlength=100 minlength=15 required>
+        
+         
+       <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao id="buttonSend">
        <ul class=valor>
-
+  </div>
        </ul>`
   
   divRodape3.innerHTML=conteudo
   rodape.appendChild(divRodape3)
 }
+
 
 
 titulo(divCabecalho1)

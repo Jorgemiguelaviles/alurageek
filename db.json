@@ -1,0 +1,22 @@
+{
+  "produltos":[{
+    "id":"",
+    "id_cliente":"",
+    "url":"",
+    "tipo":"",
+    "nomeDoProdulto":"",
+    "preçoDoProdulto":"",
+    "DescricaoDoProdulto":""
+    }],
+  
+  "clientes":[
+    {
+      "id":"" ,
+      "email":""
+      "senha":"",
+      "nome":"",
+      "usuario":"",
+      "nascimento":"",
+    }
+  ]
+}

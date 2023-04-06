@@ -1,0 +1,25 @@
+node.js linguagem de back end propria para js
+(tambem é um compilador)
+
+assests(css/img)
+controller(interage com service e manda para o front e pega os dados do front e manda para o back)
+service(interage com o banco de dados)
+telas(html)
+
+
+efeito cascata(
+lock.json(
+depenendecias são todas as dependencias em que o seu codigo esta rodando e necessiat ter para rodar)
+
+package.json 
+(são todas as dependencias em que o seu codigo esta rodando e ter para rodar)){
+tudo o que o seu package precisa para rodar esta no lock
+}
+
+metodos
+
+get->recebe algo e te devolve dados
+post->recebe(criação) dados e te devolve uma resposta
+delete->serve paraq deletar os clientes
+
+

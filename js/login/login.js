@@ -5,7 +5,7 @@ const divCabecalho2=document.createElement("div")
 
 
 const divRodape1=document.createElement("div")
-divRodape1.classList.add("cabecalho__principal")
+divRodape1.classList.add("rodape__principal")
 
 const divRodape2=document.createElement("div")
 
@@ -21,11 +21,12 @@ formulario.classList.add("principal__form")
 const titulo=(divCabecalho1)=>{
   const cabecalho=document.querySelector("#header")
 const conteudo=`
-  <img src="../img/controle.svg" alt="logo">
-  <p class="cabecalho__titulo"> geek</p>
-
-      
-     `
+<div>
+   <img src="../../assets/img/controle.svg" alt="logo">
+   <p class="cabecalho__titulo"> geek</p>
+</div>
+<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
+    `
   divCabecalho1.innerHTML=conteudo
   cabecalho.appendChild(divCabecalho1)
 }
@@ -33,9 +34,9 @@ const conteudo=`
 const procura=(divCabecalho2)=>{
   const cabecalho=document.querySelector("#header")
 const conteudo=` 
-<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
-<a href="signin.html" class=cabecalho__login>sign in</a>  
-<a href="login.html" class=cabecalho__signin>login</a>`
+
+<a href="../../telas/signin.html" class=cabecalho__login>sign in</a> 
+<a href="../../telas/login.html" class=cabecalho__signin>login</a>`
 divCabecalho2.innerHTML=conteudo
 cabecalho.appendChild(divCabecalho2)
   
@@ -44,8 +45,12 @@ cabecalho.appendChild(divCabecalho2)
 const form=(formulario)=>{
   let corpo=document.querySelector("#principal")
   let conteudo=`<p class=principal__texto>iniciar sessão</p>
-       <input id="email_form_login" type="email" placeholder="escreva seu email" class=principal__cadastro data-email>
-       <input id="senha_form_login" type="password" placeholder="escreva sua senha" class=principal__cadastro data-senha>
+       <input id="email_form_login" type="email"  class=principal__cadastro data-email  placeholder="escreva seu email" >
+     
+       
+       <input id="senha_form_login" placeholder="escreva sua senha"  type="password" class=principal__cadastro data-senha>
+      
+       
        <input id="form_btn" type="button" value=entrar class=principal__botão >
   `
 formulario.innerHTML=conteudo
@@ -66,8 +71,8 @@ formulario.innerHTML=conteudo
 const tituloRodape=(divRodape1)=>{
   let rodape=document.querySelector("#footer")
   const conteudo=`
-  <img src="../img/controle.svg" alt="logo">
-       <p class="cabecalho__titulo"> geek</p>`
+  <img src="../../assets/img/controle.svg" alt="logo">
+       <p class="rodape__titulo"> geek</p>`
   divRodape1.innerHTML=conteudo
   rodape.appendChild(divRodape1)
 }
@@ -87,19 +92,23 @@ const infoRodape=(divRodape2)=>{
 
 const faleConoscoRodape=(divRodape3)=>{
   let rodape=document.querySelector("#footer")
-  const conteudo=`    <p class=faleConosco__texto>fale conosco</p>
-       <input type="text" placeholder="digite seu nome completo" class=faleConosco__nome data-dados name="nome" id="nome"
-         maxlength=40 minlength=10 required>
-       <input type="text" placeholder="escreva a mensagem a ser enviada" class=faleConosco__email data-dados name="email"
-         maxlength=100 minlength=15 required>
+  const conteudo= `    <p class=faleConosco__texto>fale conosco</p>
+  <div class=faleConosco__entreEmContato>
+       <input type="text" class=faleConosco__nome data-dados placeholder="digite seu nome completo" name="nome" id="nome" maxlength=40 minlength=10 required>
+       
+       
+       <input type="text" class=faleConosco__email placeholder="escreva a mensagem a ser enviada" data-dados name="email" id="email" maxlength=100 minlength=15 required>
+        
+         
        <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao>
        <ul class=valor>
-
+  </div>
        </ul>`
   
   divRodape3.innerHTML=conteudo
   rodape.appendChild(divRodape3)
 }
+
 
 
 titulo(divCabecalho1)

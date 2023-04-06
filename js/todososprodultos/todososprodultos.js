@@ -9,7 +9,7 @@ section.classList.add("principal__produltos")
 
 
 const divRodape1=document.createElement("div")
-divRodape1.classList.add("cabecalho__principal")
+divRodape1.classList.add("rodape__principal")
 
 const divRodape2=document.createElement("div")
 
@@ -26,24 +26,27 @@ divRodape3.classList.add("faleConosco")
 
 const titulo=(divCabecalho1)=>{
   const cabecalho=document.querySelector("#header")
-const conteudo=`<img src="../img/controle.svg" alt="logo">
-      <p class="cabecalho__titulo"> geek</p>`
+const conteudo=`
+<div>
+   <img src="../../assets/img/controle.svg" alt="logo">
+   <p class="cabecalho__titulo"> geek</p>
+</div>
+<input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
+    `
   divCabecalho1.innerHTML=conteudo
   cabecalho.appendChild(divCabecalho1)
 }
 
 const procura=(divCabecalho2)=>{
   const cabecalho=document.querySelector("#header")
-const conteudo=` <input type="text" placeholder="o que deseja encontrar" class=cabecalho__pesquisa>
+const conteudo=` 
 
-   
-    <a href="signin.html" class=cabecalho__signin >sign in</a>  
-    <a href="login.html" class=cabecalho__login >login</a>`
-  divCabecalho2.innerHTML=conteudo
-  cabecalho.appendChild(divCabecalho2)
+<a href="../../telas/signin.html" class=cabecalho__login>sign in</a> 
+<a href="../../telas/login.html" class=cabecalho__signin>login</a>`
+divCabecalho2.innerHTML=conteudo
+cabecalho.appendChild(divCabecalho2)
   
 }
-
 
 const textos=(section)=>{
   let principal = document.querySelector("#principal")
@@ -51,7 +54,7 @@ const textos=(section)=>{
   div.classList.add("principal__subcabecalho")
   let conteudo=`         
   <h3 class=principal__titulo>todos os produltos</h3>
-  <a href="alurageekprodultos.html" class=principal__ver>adicionar produlto</a>`
+  <a href="../../telas/alurageekprodultos.html" class=principal__ver>adicionar produlto</a>`
   div.innerHTML=conteudo
   section.appendChild(div)
   principal.appendChild(section)
@@ -63,7 +66,7 @@ const produltos=(section)=>{
   let div = document.createElement("div")
   div.classList.add("principal__bloco")
   let conteudo=`      
-  <img src="../img/produltos/starwars/starwars1.svg" alt="starwars1" class=principal__produltos>
+  <img src="../../assets/img/produltos/starwars/starwars1.svg" alt="starwars1" class=principal__produltos>
          <p>produltoxyz</p>
          <p>R$60,00</p>`
   div.innerHTML=conteudo
@@ -79,8 +82,9 @@ const produltos=(section)=>{
 
 const tituloRodape=(divRodape1)=>{
   let rodape=document.querySelector("#footer")
-  const conteudo=`<img src="../img/controle.svg" alt="logo">
-       <p class="cabecalho__titulo"> geek</p>`
+  const conteudo=`
+  <img src="../../assets/img/controle.svg" alt="logo">
+       <p class="rodape__titulo"> geek</p>`
   divRodape1.innerHTML=conteudo
   rodape.appendChild(divRodape1)
 }
@@ -100,16 +104,23 @@ const infoRodape=(divRodape2)=>{
 
 const faleConoscoRodape=(divRodape3)=>{
   let rodape=document.querySelector("#footer")
-  const conteudo=`    
-  <p class=faleConosco__texto>fale conosco</p>
-  <input type="text" placeholder="digite seu nome completo" class=faleConosco__nome data-dados name="nome" id="nome" maxlength=40 minlength=10 required>
-  <input type="text" placeholder="escreva a mensagem a ser enviada" class=faleConosco__email data-dados name="email" maxlength=100 minlength=15 required>
-  <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao>
-  `
+  const conteudo=`    <p class=faleConosco__texto>fale conosco</p>
+  <div class=faleConosco__entreEmContato>
+       <input type="text" class=faleConosco__nome data-dados placeholder="digite seu nome completo" name="nome" id="nome" maxlength=40 minlength=10 required>
+       
+       
+       <input type="text" class=faleConosco__email placeholder="escreva a mensagem a ser enviada" data-dados name="email" id="email" maxlength=100 minlength=15 required>
+        
+         
+       <input type="button" value="enviar mensagem" data-mensagem class=faleConosco__botao>
+       <ul class=valor>
+  </div>
+       </ul>`
   
   divRodape3.innerHTML=conteudo
   rodape.appendChild(divRodape3)
 }
+
 
 
 titulo(divCabecalho1)

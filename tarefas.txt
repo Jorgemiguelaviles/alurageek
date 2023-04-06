@@ -1,38 +1,8 @@
-feitos
-pag principal
--bussola como icone de pesquisa
+feitos:
+-Arrumar as rotas
 
-pag login/signin
-
-pag todos os produltos
-
-pag adicionar produltos
-
-
-designer
-pag principal
--bussola como icone de pesquisa
--tamanho do botão e tamanho da fonte
--aumentar o tamanho do botão(enviar mensagem)
--recriar banner
--posicionamento dos objetos header
--posicionamento dos objetos footer
--alinhamento do site600
--deixar a "alura"+"geek"+"controle" todos juntos inseparaveis
--alterar seta
-
-pag login/signin
--tamanho do input
--criar um input de forma quando você vai escrever o placeholder se movimenta sima e permanece ali
--alinhamento dos produltos
--poscionamento dos objetos no rodapé
-
-pag todos os produltos
--criar icone excluir e editar
--criar codigo do produlto
--alterar tamanho do botão
--alinhamento dos produltos
-
-pag adicionar produltos
--tamanho do input
--text-align:left
+a fazer:
+-Criar sistemas de validação(dar uma olhada no validaSignin(pattern) e no atributo imagens do cadastrar produltos(url(achar alguma forma de enviar uma imagem)))
+-assistir (curso CRUD){
+-service
+-controller}
